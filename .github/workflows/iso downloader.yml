@@ -29,65 +29,49 @@ jobs:
               # --- Linux Desktop & Server ---
               "Ubuntu")
                 URL="https://releases.ubuntu.com/noble/ubuntu-24.04.4-desktop-amd64.iso"
-                OUT="ubuntu-24.04-desktop.iso"
+                OUT="ubuntu-x64.iso"
                 ;;
               "Debian Latest")
-                URL="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-12.9.0-amd64-DVD-1.iso"
-                OUT="debian-12-desktop.iso"
+                URL="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso"
+                OUT="debian-13-x64.iso"
                 ;;
-              "Fedora Workstation Latest")
-                URL="https://download.fedoraproject.org/pub/fedora/linux/releases/40/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-40-1.7.iso"
-                OUT="fedora-workstation-40.iso"
+              "Fedora")
+                URL="https://download.fedoraproject.org/pub/fedora/linux/releases/43/KDE/x86_64/iso/Fedora-KDE-Desktop-Live-43-1.6.x86_64.iso"
+                OUT="fedora-43-x86_64.iso"
                 ;;
-              "Fedora Server Latest")
-                URL="https://download.fedoraproject.org/pub/fedora/linux/releases/40/Server/x86_64/iso/Fedora-Server-40-x86_64-1.7.iso"
-                OUT="fedora-server-40.iso"
+              "Fedora Server")
+                URL="https://download.fedoraproject.org/pub/fedora/linux/releases/43/Server/x86_64/iso/Fedora-Server-dvd-x86_64-43-1.6.iso"
+                OUT="fedora-server-43-x86_64.iso"
                 ;;
-              "Arch Linux Latest")
-                URL="https://mirror.rackspace.com/archlinux/iso/latest/archlinux-x86_64.iso"
-                OUT="archlinux-latest.iso"
+              "Arch")
+                URL="https://techloudgeek.com/download/image/?link=https://dlconusc1.linuxvmimages.com/046389e06777452db2ccf9a32efa3760:virtualbox/A/archlinux/ArchLinux_2022_VB.7z"
+                OUT="arch-virtualbox-image.7z"
                 ;;
-              "Kali Latest")
-                URL="https://cdimage.kali.org/kali-2025.1/kali-linux-2025.1-live-amd64.iso"
-                OUT="kali-2025.1.iso"
+              "Kali")
+                URL="https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-installer-netinst-amd64.iso"
+                OUT="kali-2025.4-x64.iso"
                 ;;
-              "Linux Mint Latest")
-                URL="https://mirrors.edge.kernel.org/linuxmint/stable/21.2/linuxmint-21.2-cinnamon-64bit.iso"
+              "Mint")
+                URL="https://pub.linuxmint.io/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso"
                 OUT="linuxmint-21.2.iso"
                 ;;
-              "Pop!_OS Latest")
-                URL="https://system76.com/pop-download/24.04/pop-os_24.04_amd64_Desktop.iso"
-                OUT="popos-24.04.iso"
-                ;;
-              "openSUSE Leap Latest")
-                URL="https://download.opensuse.org/distribution/leap/15.5/iso/openSUSE-Leap-15.5-DVD-x86_64.iso"
-                OUT="opensuse-leap-15.5.iso"
-                ;;
-              "CentOS Stream Latest")
-                URL="http://mirror.stream.centos.org/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-x86_64-boot.iso"
-                OUT="centos-stream-9.iso"
-                ;;
-              "AlmaLinux Latest")
-                URL="https://repo.almalinux.org/almalinux/9/isos/x86_64/AlmaLinux-9.3-x86_64-dvd.iso"
-                OUT="almalinux-9.3.iso"
-                ;;
-              "Rocky Linux Latest")
-                URL="https://dl.rockylinux.org/vault/rocky/9.6/isos/x86_64/Rocky-9.6-x86_64-dvd.iso"
-                OUT="rocky-9.6.iso"
-                ;;
-              "Alpine Latest")
-                URL="https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/x86_64/alpine-standard-3.21.0-x86_64.iso"
-                OUT="alpine-3.21.iso"
+              "Lubuntu")
+                URL="https://cdimage.ubuntu.com/lubuntu/releases/noble/release/lubuntu-24.04.4-desktop-amd64.iso"
+                OUT="lubuntu-x64.iso"
                 ;;
 
               # --- Windows ---
               "Windows 11")
-                URL="https://software-download.microsoft.com/dbx/Win11_22H2_English_x64.iso"
-                OUT="Win11.iso"
+                URL="https://trashbytes.net/dl/oiwANc40fd3VxKfkbbHzHUFRCSJkXYQ_s04jVVDm9c52Q40vfsvgUqfxGD6K4c8nhgkcSPOWsgFqqq5a4VSLLBjjWcT0Cwd3M98WKwCLTuha7Tkg_1XdybSfIV-fO-kG0rf2kq725Ln9AOaoIDW-4qDLGuLYjsybXDjum5t630BeRw?v=1774276062-D%2FvzEcWr2%2Ft1c88ALFa0ilaAXpIrPGFZuTFVbb%2FyD6o%3D"
+                OUT="Win11-IoT-x64.iso"
                 ;;
-              "Windows 10")
-                URL="https://software-download.microsoft.com/pr/Win10_22H2_English_x64.iso"
-                OUT="Win10.iso"
+              "Windows 10 x64")
+                URL="https://trashbytes.net/dl/BibA3G7Bn4Uf-5sLSWw090w1FBy1EbYyadLSKweMqhTdppaL3mx_7A18rb9zcMA25oytiD16NlWLS8VkToQ1kJz1c7ZNlycAK0a8jaH4x6hROLGQcS72sb1miHSxchKecIt3xA5sMiDSJ6vokBnHKIoJKzOFtDDKXnn5XcIDfkfuoQ?v=1774275890-%2Fzsm0I6Fp7cGTc%2BLZ7AlHJqk%2F78bG2Mfjt4eiXeY9VI%3D"
+                OUT="Win10-x64.iso"
+                ;;
+              "Windows 10 x86")
+                URL="https://trashbytes.net/dl/G4MHJDfxwHjPbZjk1Glf1WdF0UP6Eq9LseVpol060Y3HEnfeRNOMxdBgx2FK6hSWSugSnrjgWuplnt3P3mLlMD6lmtghpLCCW2UfaMYA5vBLJOw1OBykQzcBtGW312o5c467vrgzmq990M8XO_5eWt-JPCOydugJQo1OnyDZ?v=1774275991-19b1dkIk4Qxo4SLjDGCNVM5nGgN5wGGJxT0SFndpM6Q%3D"
+                OUT="Win10-x86.iso"
                 ;;
               "Windows 8.1")
                 URL="https://software-download.microsoft.com/dbx/Windows8.1_English_x64.iso"
@@ -98,8 +82,8 @@ jobs:
                 OUT="Win7.iso"
                 ;;
               "Windows XP")
-                URL="https://software-download.microsoft.com/dbx/Windows_XP_SP3.iso"
-                OUT="WinXP_SP3.iso"
+                URL="https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso"
+                OUT="WinXP-SP3.iso"
                 ;;
               "Tiny10 Latest")
                 URL="https://fast.download.example.com/tiny10-latest.iso"
