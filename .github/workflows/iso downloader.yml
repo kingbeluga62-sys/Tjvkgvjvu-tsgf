@@ -111,11 +111,11 @@ jobs:
                 ;;
 
               # --- Windows Media Creation Tools / USB flashable tools ---
-              "Windows 10 Media Creation Tool")
+              "Win10 Media")
                 URL="https://go.microsoft.com/fwlink/?LinkId=691209"  # official Microsoft link
                 OUT="MediaCreationToolWin10.exe"
                 ;;
-              "Windows 11 Media Creation Tool")
+              "Win11 Media")
                 URL="https://go.microsoft.com/fwlink/?linkid=2156295"  # official Microsoft link
                 OUT="MediaCreationToolWin11.exe"
                 ;;
@@ -134,4 +134,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: downloaded-isos-tools
-          path: "*.iso,*.exe"
+          path: "*.iso"
