@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       selections:
-        description: "Comma-separated list of ISOs or tools to download (e.g., Ubuntu Latest, Windows 10 Media Creation Tool, Kali Latest)"
+        description: "Comma-separated list of ISOs or tools to download (e.g., Ubuntu, Kali, Fedora, Lubuntu, Win11, Win10 x64)"
         required: true
-        default: "Ubuntu Latest, Debian Latest, Windows 10, Tiny11 Latest, Fedora Server Latest"
+        default: "Win10"
 
 jobs:
   download:
@@ -19,7 +19,7 @@ jobs:
         run: |
           echo "SELECTIONS=${{ github.event.inputs.selections }}" >> $GITHUB_ENV
 
-      - name: Download ISOs / Tools
+      - name: Download ISOs
         run: |
           IFS=',' read -ra choices <<< "$SELECTIONS"
           for raw in "${choices[@]}"; do
@@ -31,7 +31,7 @@ jobs:
                 URL="https://releases.ubuntu.com/noble/ubuntu-24.04.4-desktop-amd64.iso"
                 OUT="ubuntu-x64.iso"
                 ;;
-              "Debian Latest")
+              "Debian")
                 URL="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso"
                 OUT="debian-13-x64.iso"
                 ;;
@@ -74,23 +74,23 @@ jobs:
                 OUT="Win10-x86.iso"
                 ;;
               "Windows 8.1")
-                URL="https://software-download.microsoft.com/dbx/Windows8.1_English_x64.iso"
-                OUT="Win8.1.iso"
+                URL="https://archive.org/download/win-8.1-english-x-64-x-86/Win8.1_English_x64.iso"
+                OUT="Win8.1-x64.iso"
                 ;;
               "Windows 7")
-                URL="https://software-download.microsoft.com/pr/Win7_English_x64.iso"
-                OUT="Win7.iso"
+                URL="https://archive.org/download/windows-7-ultimate-x-64-sp-1-fully-updated/Windows%207%20Ultimate%20x64%20-%20SP1%20%28Fully%20Updated%29.iso"
+                OUT="Win7-x64.iso"
                 ;;
               "Windows XP")
                 URL="https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso"
                 OUT="WinXP-SP3.iso"
                 ;;
-              "Tiny10 Latest")
-                URL="https://fast.download.example.com/tiny10-latest.iso"
+              "Tiny10")
+                URL="https://archive.org/download/tiny-10-23-h2/tiny10%20x64%2023h2.iso"
                 OUT="tiny10-latest.iso"
                 ;;
-              "Tiny11 Latest")
-                URL="https://fast.download.example.com/tiny11-latest.iso"
+              "Tiny11")
+                URL="https://archive.org/download/tiny-11-NTDEV/tiny11%20b2%28no%20sysreq%29.iso"
                 OUT="tiny11-latest.iso"
                 ;;
 
