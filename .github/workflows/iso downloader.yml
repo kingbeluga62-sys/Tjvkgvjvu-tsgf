@@ -27,8 +27,8 @@ jobs:
             case "$item" in
 
               # --- Linux Desktop & Server ---
-              "Ubuntu Latest")
-                URL="https://releases.ubuntu.com/24.04/ubuntu-24.04-desktop-amd64.iso"
+              "Ubuntu")
+                URL="https://releases.ubuntu.com/noble/ubuntu-24.04.4-desktop-amd64.iso"
                 OUT="ubuntu-24.04-desktop.iso"
                 ;;
               "Debian Latest")
